@@ -15,6 +15,10 @@ Run the following in your command-line:
 $ brew tap mclab-sapienza/science
 ```
 
+## Available Formulae
+
+* [OpenModelica v1.11.0](https://github.com/mclab-sapienza/homebrew-science/blob/master/openmodelica.rb)
+
 ## Bugs happen
 
 The more information you provide and the more detailed your report is, the easier it is for us to fix it.
