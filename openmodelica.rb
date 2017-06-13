@@ -3,7 +3,8 @@ class Openmodelica < Formula
   homepage "https://openmodelica.org"
   url "https://github.com/OpenModelica/OpenModelica",
     :using => :git,
-    :tag => "v1.11.0"
+    :tag => "v1.11.0",
+    :revision => "b44575c9591e5f7eac1928e135ad12ea995c3237"
 
   bottle do
     root_url "https://mclabservices.di.uniroma1.it/homebrew-science-bottles/"
@@ -13,21 +14,20 @@ class Openmodelica < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "libtool" => :build
-  depends_on "gcc" => :build
-  depends_on "boost" => :optional
   depends_on "cmake" => :build
+  depends_on "xz" => :build
+  depends_on "gnu-sed" => :build
+  depends_on "qt" => "with-qtwebkit"
+  depends_on "gcc"
   depends_on "lp_solve"
   depends_on "readline"
   depends_on "omniorb"
-  depends_on "gettext" => :build
-  depends_on "qt" => "with-qtwebkit"
+  depends_on "gettext"
+  depends_on "hwloc"
   depends_on "sundials" => :optional
-  depends_on "xz" => :build
-  depends_on "gnu-sed" => :build
+  depends_on "boost" => :optional
 
   def install
-    ENV["CC"] = "clang"
-    ENV["CXX"] = "clang++"
     args = %W[--disable-debug
               --disable-dependency-tracking
               --disable-silent-rules
@@ -35,6 +35,7 @@ class Openmodelica < Formula
               CC=#{ENV.cc}
               CXX=#{ENV.cxx}
               --with-omniORB=#{Formula["omniorb"].opt_prefix}]
+    args << "--with-cppruntime" if build.with? "boost"
     ohai "Checking out branch master for libraries submodule."
     cd("libraries") do
       system "git", "checkout", "master"
