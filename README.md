@@ -5,7 +5,7 @@ MCLab repository of homebrew formulae.
 ## Requirements
 
 * [Homebrew](https://github.com/Homebrew/brew)
-* Sierra. Untested everywhere else.
+* High Sierra. Untested everywhere else.
 
 ## Installation
 
