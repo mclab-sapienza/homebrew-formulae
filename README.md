@@ -12,16 +12,16 @@ MCLab repository of homebrew formulae.
 Run the following in your command-line:
 
 ```sh
-$ brew tap mclab-sapienza/science
+$ brew tap mclab-sapienza/formulae
 ```
 
 ## Available Formulae
 
-* [OpenModelica v1.11.0](https://github.com/mclab-sapienza/homebrew-science/blob/master/openmodelica.rb)
+* [OpenModelica v1.12.0](https://github.com/mclab-sapienza/homebrew-formulae/blob/master/openmodelica.rb)
 
 ## Bugs happen
 
 The more information you provide and the more detailed your report is, the easier it is for us to fix it.
 
 ## License
-Code is under the [BSD 2-clause "Simplified" License](https://github.com/mclab-sapienza/homebrew-science/blob/master/LICENSE).
+Code is under the [BSD 2-clause "Simplified" License](https://github.com/mclab-sapienza/homebrew-formulae/blob/master/LICENSE).
