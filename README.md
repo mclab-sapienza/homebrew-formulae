@@ -5,7 +5,7 @@ MCLab repository of homebrew formulae.
 ## Requirements
 
 * [Homebrew](https://github.com/Homebrew/brew)
-* High Sierra. Untested everywhere else.
+* Mojave. Untested everywhere else.
 
 ## Installation
 
@@ -17,7 +17,7 @@ $ brew tap mclab-sapienza/formulae
 
 ## Available Formulae
 
-* [OpenModelica v1.12.0](https://github.com/mclab-sapienza/homebrew-formulae/blob/master/openmodelica.rb)
+* [OpenModelica v1.13.2](https://github.com/mclab-sapienza/homebrew-formulae/blob/master/openmodelica.rb)
 
 ## Bugs happen
 
